@@ -6,22 +6,19 @@
 
 namespace  dlds\metronic\bundles;
 
-use yii\web\AssetBundle;
-
 /**
- * SpinnerAsset for spinner widget.
+ * MultiSelectAsset for multi select widget.
  */
-class MultiSelectAsset extends AssetBundle
+class MultiSelectAsset extends BaseAssetBundle
 {
-    public $sourcePath = '@dlds/metronic/assets';
+
     public $js = [
-        'plugins/jquery-multi-select/js/jquery.multi-select.js',
+        'global/plugins/jquery-multi-select/js/jquery.multi-select.js',
     ];
 
     public $css = [
-        'plugins/jquery-multi-select/css/multi-select.css',
+        'global/plugins/jquery-multi-select/css/multi-select.css',
     ];
-
 
     public $depends = [
         'dlds\metronic\bundles\CoreAsset',
