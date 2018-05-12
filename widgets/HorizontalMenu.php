@@ -183,7 +183,6 @@ class HorizontalMenu extends Menu {
             if ($this->search['visible'])
                 $data[] = Html::tag('li', $this->renderSearch());            
         } 
-        $data[] = Html::tag('li', $this->renderSearch());
         echo Html::tag($tag, implode("\n", $data), $options);
         echo Html::endTag('div');
     }
