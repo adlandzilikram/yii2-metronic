@@ -1,5 +1,5 @@
 {
-    "name": "dlds/yii2-metronic",
+    "name": "hidayat365/yii2-metronic",
     "description": "Yii2 Metronic theme integration",
     "keywords": ["yii2", "theme", "metronic"],
     "type": "yii2-extension",
@@ -12,7 +12,14 @@
     "authors": [
         {
             "name": "Jiri Svoboda",
-            "email": "jiri.svoboda@dlds.cz"
+            "email": "jiri.svoboda@dlds.cz",
+            "role": "Original Creator"
+        },
+        {
+            "name": "Nur Hidayat",
+            "email": "hidayat365@gmail.com",
+            "homepage": "https://pojokprogrammer.com",
+            "role": "Developer"
         }
     ],
     "require": {
