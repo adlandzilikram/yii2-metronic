@@ -84,7 +84,16 @@ class NavBar extends \yii\bootstrap\NavBar {
      */
     protected function renderToggleButton()
     {
-        return Html::tag('div', '', ['class' => 'menu-toggler sidebar-toggler']);
+        return Html::tag('div', '<span></span>', ['class' => 'menu-toggler sidebar-toggler']);
+    }
+
+    /**
+     * Renders responsive toggle button
+     * @return string the rendering result
+     */
+    protected function renderResponsiveToggleButton()
+    {
+        return Html::a('<span></span>', ['javascript:;'], ['class' => 'menu-toggler sidebar-toggler', 'data-toggle' => 'collapse', 'data-target' => '.navbar-collapse']);
     }
 
     /**
