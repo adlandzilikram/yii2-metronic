@@ -3,7 +3,7 @@
     "description": "Yii2 Metronic theme integration",
     "keywords": ["yii2", "theme", "metronic"],
     "type": "yii2-extension",
-    "license": "BSD",
+    "license": "BSD-3-Clause",
     "support": {
         "issues": "https://github.com/dlds/yii2-metronic/issues",
         "wiki": "https://github.com/dlds/yii2-metronic/wiki",
