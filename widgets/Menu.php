@@ -32,6 +32,12 @@ use yii\widgets\ActiveForm as CoreActiveForm;
  * ```php
  * echo Menu::widget([
  *     'items' => [
+ *         // heading menu
+ *         [
+ *           'heading' => true,
+ *           'label' => 'Dashboard',
+ *           'options' => ['class' => 'heading'],
+ *         ],
  *         // Important: you need to specify url as 'controller/action',
  *         // not just as 'controller' even if default action is used.
  *         [
@@ -96,8 +102,9 @@ class Menu extends \yii\widgets\Menu {
      * The token `{arrow}` will be replaced with the corresponding link arrow.
      * This property will be overridden by the `template` option set in individual menu items via [[items]].
      */
-    public $linkTemplate = '<a href="{url}">{icon}{label}{badge}{arrow}</a>';
-
+    public $linkTemplate = '<a href="{url}" class="nav-link nav-toggle">{icon}{label}{badge}{arrow}</a>';
+    public $headingTemplate = '<h3 class="uppercase">{icon}{label}{badge}</h3>';
+    
     /**
      * @var bool Indicates whether menu is visible.
      */
@@ -188,7 +195,9 @@ class Menu extends \yii\widgets\Menu {
      */
     protected function renderItem($item)
     {
-        return strtr(ArrayHelper::getValue($item, 'template', $this->linkTemplate), [
+        if (!isset($item['heading'])) $item['heading'] = false;
+        $template = $item['heading'] ? $this->headingTemplate : $this->linkTemplate;
+        return strtr(ArrayHelper::getValue($item, 'template', $template), [
             '{url}' => $this->_pullItemUrl($item),
             '{label}' => $this->_pullItemLabel($item),
             '{icon}' => $this->_pullItemIcon($item),
@@ -287,6 +296,7 @@ class Menu extends \yii\widgets\Menu {
     private function _initOptions()
     {
         Html::addCssClass($this->options, 'page-sidebar-menu');
+        Html::addCssClass($this->options, 'page-header-fixed');
 
         if (Metronic::getComponent() && Metronic::SIDEBAR_MENU_HOVER === Metronic::getComponent()->sidebarMenu)
         {
