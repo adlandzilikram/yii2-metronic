@@ -10,7 +10,7 @@ use yii\helpers\Json;
 use yii\helpers\StringHelper;
 use yii\web\JsExpression;
 use yii\web\View;
-
+use dlds\metronic\bundles\NotificationAsset;
 
 /**
  * Notification renders a notification box that can be opened by clicking on a button.
