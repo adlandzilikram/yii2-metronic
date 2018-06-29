@@ -137,5 +137,6 @@ class Notification extends  Widget
             $widget->clientEvents['click'] =  "function(){{$jsOpen};}";
         }
         $widget->run();
+        $widget::end();
     }
 }
