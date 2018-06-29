@@ -10,7 +10,7 @@ The extension is in development and the only way to use this fork is through thr
 
 So add it to your composer.json with this composer command:
 ```
-php composer.phar require dlds/yii2-metronic dev-master
+php composer.phar require hidayat365/yii2-metronic dev-master
 ```
 
  
