@@ -1,5 +1,5 @@
 # yii2-metronic
-Yii2 [Metronic theme](http://www.keenthemes.com/) integration. Currently is supported the version 4.6
+Yii2 [Metronic theme](http://www.keenthemes.com/) integration. Currently is supported the version 4.7.5
 
 
 Installation
