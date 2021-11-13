@@ -24,6 +24,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap5": "^2.0",
         "kartik-v/yii2-grid": "*"
     },
     "autoload": {

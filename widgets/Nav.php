@@ -43,7 +43,7 @@ use dlds\metronic\Metronic;
  *
  * Note: Multilevel dropdowns beyond Level 1 are not supported in Bootstrap 3.
  */
-class Nav extends \yii\bootstrap\Nav {
+class Nav extends \yii\bootstrap5\Nav {
 
     /**
      * Positions
@@ -127,7 +127,7 @@ class Nav extends \yii\bootstrap\Nav {
      * @return string the rendering result.
      * @throws InvalidConfigException
      */
-    public function renderItem($item)
+    public function renderItem($item): string
     {
         if (is_string($item))
         {
@@ -269,6 +269,7 @@ class Nav extends \yii\bootstrap\Nav {
 
             if ($this->activateItems)
             {
+                $active = $active??true;
                 $items = $this->isChildActive($items, $active);
             }
 

@@ -48,7 +48,7 @@ use yii\helpers\Html;
  * ```
  *
  */
-class Tabs extends \yii\bootstrap\Tabs {
+class Tabs extends \yii\bootstrap5\Tabs {
 
     // Tab placements.
     const PLACEMENT_ABOVE = 'above';

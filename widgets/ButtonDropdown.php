@@ -38,7 +38,7 @@ use yii\helpers\Html;
  * ```
  *
  * */
-class ButtonDropdown extends \yii\bootstrap\ButtonDropdown {
+class ButtonDropdown extends \yii\bootstrap5\ButtonDropdown {
 
     /**
      * @var array The configuration array for [[Button]].

@@ -30,7 +30,7 @@ use yii\helpers\Html;
  * ]);
  *
  */
-class Dropdown extends \yii\bootstrap\Dropdown {
+class Dropdown extends \yii\bootstrap5\Dropdown {
 
     /**
      * @var string the dropdown title
@@ -95,10 +95,10 @@ class Dropdown extends \yii\bootstrap\Dropdown {
     /**
      * Executes the widget.
      */
-    public function run()
+    public function run(): string
     {
 
-        echo $this->renderItems($this->items);
+        return $this->renderItems($this->items);
     }
 
     /**
@@ -107,7 +107,7 @@ class Dropdown extends \yii\bootstrap\Dropdown {
      * @return string the rendering result.
      * @throws InvalidConfigException if the label option is not specified in one of the items.
      */
-    protected function renderItems($items, $options = [])
+    protected function renderItems($items, $options = []): string
     {
         $lines = [];
         if ($this->title)

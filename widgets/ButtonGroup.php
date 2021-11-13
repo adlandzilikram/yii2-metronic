@@ -33,7 +33,7 @@ use yii\helpers\Html;
  * ]);
  * ```
  */
-class ButtonGroup extends \yii\bootstrap\ButtonGroup
+class ButtonGroup extends \yii\bootstrap5\ButtonGroup
 {
     /**
      * @var bool Indicates whether the button group appears vertically stacked.

@@ -15,7 +15,7 @@ use yii\helpers\Json;
  * @author icron.org <arbuscula@gmail.com>
  * @since 1.0
  */
-class Widget extends \yii\bootstrap\Widget
+class Widget extends \yii\bootstrap5\Widget
 {
     /**
      * @var array the HTML attributes for the widget container tag.

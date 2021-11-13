@@ -28,7 +28,7 @@ use yii\helpers\Html;
  * ]);
  * ```
  */
-class Button extends \yii\bootstrap\Button {
+class Button extends \yii\bootstrap5\Button {
 
     /**
      *  Button bootstrap types

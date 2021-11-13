@@ -41,7 +41,7 @@ use yii\helpers\Html;
  * Alert::end();
  * ```
  */
-class Alert extends \yii\bootstrap\Alert {
+class Alert extends \yii\bootstrap5\Alert {
 
     // type
     const TYPE_SUCCESS = 'success';

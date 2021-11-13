@@ -19,7 +19,7 @@ use Yii;
  * or [[\yii\widgets\Menu]] to build up such content. For example,
  *
  * ```php
- * use yii\bootstrap\NavBar;
+ * use yii\bootstrap5\NavBar;
  * use yii\widgets\Menu;
  *
  * NavBar::begin([
@@ -37,7 +37,7 @@ use Yii;
  *
  * @see http://twitter.github.io/bootstrap/components.html#navbar
  */
-class NavBar extends \yii\bootstrap\NavBar {
+class NavBar extends \yii\bootstrap5\NavBar {
 
     /**
      * @var string the url to logo of the brand.
@@ -82,7 +82,7 @@ class NavBar extends \yii\bootstrap\NavBar {
      * Renders toggle button
      * @return string the rendering result
      */
-    protected function renderToggleButton()
+    protected function renderToggleButton(): string
     {
         return Html::tag('div', '<span></span>', ['class' => 'menu-toggler sidebar-toggler']);
     }

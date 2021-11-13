@@ -6,8 +6,8 @@
 
 namespace dlds\metronic\widgets;
 
-use yii\bootstrap\Button as BButton;
-use yii\bootstrap\ButtonDropdown;
+use yii\bootstrap5\Button as BButton;
+use yii\bootstrap5\ButtonDropdown;
 use yii\helpers\Html;
 
 /**
