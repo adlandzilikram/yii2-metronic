@@ -1,6 +1,7 @@
 # yii2-metronic
 Yii2 [Metronic theme](http://www.keenthemes.com/) integration. Currently is supported the version 4.7.5
 
+Master branch as per 12 November 2021 uses bootstrap 5.x, so if you need support for bootstrap 3.x then uses version 2.0.x
 
 Installation
 ------------
