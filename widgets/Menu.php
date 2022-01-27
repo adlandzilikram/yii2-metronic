@@ -126,7 +126,14 @@ class Menu extends \yii\widgets\Menu {
     public function run()
     {
         echo Html::beginTag('div', ['class' => 'page-sidebar-wrapper']);
-        echo Html::beginTag('div', ['class' => 'page-sidebar navbar-collapse collapse']);
+        echo Html::beginTag('div', [
+            'class' => 'page-sidebar navbar-collapse collapse',
+            'style' => '
+            position: fixed;
+            overflow-y: auto;
+            top: 0;
+            bottom: 0;'
+        ]);
 
         parent::run();
 
